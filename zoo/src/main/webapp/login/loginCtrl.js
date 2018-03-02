@@ -2,7 +2,7 @@
 (function () {
     angular
         .module('app')
-        .controller('loginController', ['$location', 'AuthenticationService', 'FlashService' , function ($location, AuthenticationService, FlashService) {
+        .controller('loginController', ['$location', 'authenticationService', 'flashService' , function ($location, AuthenticationService, FlashService) {
         var ctrl = this;
  
         ctrl.login = login;
