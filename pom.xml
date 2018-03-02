@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.aar</groupId>
+	<artifactId>mavenmagic</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>MavenMagic</name>
+	<description>Learning Maven</description>
+	<profiles>
+		<profile>
+			<id>zoo</id>
+			<modules>
+				<module>animal</module>
+				<module>cat</module>
+				<module>wildanimal</module>
+				<module>tiger</module>
+				<module>domesticanimal</module>
+				<module>zoo</module>
+			</modules>
+		</profile>
+	</profiles>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<org.springframework.version>4.2.0.RELEASE</org.springframework.version>
+		<jetty.version>9.4.6.v20170531</jetty.version>
+	</properties>
+
+</project>
